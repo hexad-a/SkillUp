@@ -45,6 +45,26 @@ export { Prisma }
  */
 export type User = Prisma.UserModel
 /**
+ * Model Class
+ * 
+ */
+export type Class = Prisma.ClassModel
+/**
+ * Model ClassMember
+ * 
+ */
+export type ClassMember = Prisma.ClassMemberModel
+/**
+ * Model Assignment
+ * 
+ */
+export type Assignment = Prisma.AssignmentModel
+/**
+ * Model Submission
+ * 
+ */
+export type Submission = Prisma.SubmissionModel
+/**
  * Model Account
  * 
  */
