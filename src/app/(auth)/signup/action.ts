@@ -1,5 +1,6 @@
 import { prisma } from "@/app/prisma";
 import bcrypt from "bcryptjs";
+import { redirect } from "next/navigation";
 
 export async function createAccount(formData: FormData) {
     const email = formData.get("email") as string | null;
@@ -30,4 +31,6 @@ export async function createAccount(formData: FormData) {
         console.error("Error creating user:", error);
         throw new Error("Failed to create user");
     }
+
+    redirect('/signin');
 }
